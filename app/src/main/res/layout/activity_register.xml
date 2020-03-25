@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="35dp"
+    android:padding="35dp"
+    android:background="#22655F"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="308dp"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/back" />
+
+
+            <EditText
+                android:id="@+id/edRegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="43dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape2"
+                android:hint="Email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edRegisterPass"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="43dp"
+                android:background="@drawable/shape2"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:hint="Password"/>
+
+            <EditText
+                android:id="@+id/edRegisterName"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="43dp"
+                android:background="@drawable/shape2"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:hint="Username"/>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/shape"
+                android:onClick="registerUser"
+                android:text="Register"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tvnewuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Already have an account?? Login"
+                android:onClick="gotoLogin"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#2eb187"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarRegister"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
