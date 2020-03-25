@@ -82,6 +82,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageA
 
                     messageDb.child(messages.get(getAdapterPosition()).getKey()).removeValue();
 
+                    //
+
 
                 }
             });
